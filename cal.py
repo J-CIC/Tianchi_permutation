@@ -16,13 +16,13 @@ total["first_type"] = total["type1_1"]+total["type1_2"]+total["type1_3"]
 total['second_type'] =  total["type2_1"]+total["type2_2"]
 
 #有大红包的概率
-P_has_any = (len(total[total["first_type"]>0])+len(total[total["second_type"]>0]) )/len(total)
+P_has_any = (len(total[total["first_type"]>0])+len(total[total["second_type"]>0]) )/(len(total)*2)
 #有1个大红包的概率
-P_has_one = (len(total[total["first_type"]==1])+len(total[total["second_type"]==1]) )/len(total)
+P_has_one = (len(total[total["first_type"]==1])+len(total[total["second_type"]==1]) )/(len(total)*2)
 #有2个大红包的概率
-P_has_two = (len(total[total["first_type"]==2])+len(total[total["second_type"]==2]) )/len(total)
+P_has_two = (len(total[total["first_type"]==2])+len(total[total["second_type"]==2]) )/(len(total)*2)
 #有3个大红包的概率
-P_has_three = (len(total[total["first_type"]==3])+len(total[total["second_type"]==3]) )/len(total)
+P_has_three = (len(total[total["first_type"]==3])+len(total[total["second_type"]==3]) )/(len(total)*2)
 
 print("P_has_any:",P_has_any*100,"%")
 print("P_has_one:",P_has_one*100,"%")
